@@ -1,0 +1,91 @@
+{% extends "survey/_base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block title %}
+    {{ survey.title }}
+{% endblock %}
+
+{% block extra_js %}
+    <script src="//cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+    <script src="//cdn.jsdelivr.net/leaflet/0.7.7/leaflet.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.2.3/leaflet.draw.js"></script>
+    <script src="//cdn.jsdelivr.net/js-cookie/2.0.4/js.cookie.js"></script>
+    <script src="//cdn.ravenjs.com/2.1.0/raven.min.js"></script>
+    <script src="{% url 'survey_settings' survey.slug %}"></script>
+    <script src="{% static "survey/js/map.js" %}"></script>
+    <script src="{% static "survey/js/form.js" %}"></script>
+    <script src="{% static "survey/js/app.js" %}"></script>
+    <script>
+        ca.prepareResults('{% url 'get_features' survey.slug %}');
+
+        $('#button_export_excel').click(function(event) {
+            window.location.href = '{% url 'export_excel' survey.slug %}?type=' + $('#export_type').val();
+        });
+
+        /* Disabled until further notice
+        $('#button_export_geojson').click(function(event) {
+            window.location.href = '{% url 'export_geojson' survey.slug %}?type=' + $('#export_type').val();
+        });
+        */
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', '{{ google_analytics_key }}', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/leaflet/0.7.7/leaflet.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/leaflet.draw/0.2.3/leaflet.draw.css" />
+    <link rel="stylesheet" href="{% static "survey/css/app.css" %}" />
+{% endblock %}
+
+{% block body_content %}
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">{% trans 'Results for' %} {{ survey.title }}</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <div id="map"></div>
+            </div>
+            <div class="col-md-3">
+                <h2>{% trans 'Statistics' %}</h2>
+                <p>{% trans 'The survey contains, in total:' %}</p>
+                <ul>
+                    <li>{{ point_count }} {% trans 'points' %}</li>
+                    <li>{{ line_count }} {% trans 'lines' %}</li>
+                    <li>{{ polygon_count }} {% trans 'polygons' %}</li>
+                </ul>
+                <h2>{% trans 'Export' %}</h2>
+                <p>{% trans 'Select data export. Note that you can only export one data type (e.g. lines) at a time.' %}</p>
+                <form>
+                    <div class="form-group">
+                        <label for="export_type">{% trans 'Data type' %}</label>
+                        <select id="export_type" name="export_type" class="form-control">
+                            <option value="Point">{% trans 'Points' %}</option>
+                            <option value="LineString">{% trans 'Lines' %}</option>
+                            <option value="Polygon">{% trans 'Polygons' %}</option>
+                        </select>
+                    </div>
+                </form>
+                <p><a id="button_export_excel" class="btn btn-default btn-small" href="#">{% trans 'Export to Excel' %}</a></p>
+
+                <!-- Disabled until further notice
+                <p><a id="button_export_geojson" class="btn btn-default btn-small" href="#">{% trans 'Export to GeoJSON' %}</a></p>
+                  -->
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

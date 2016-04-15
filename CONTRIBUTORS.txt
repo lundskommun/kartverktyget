@@ -1,0 +1,3 @@
+The following organisations and individuals have contributed to Crawls since the complete rewrite in 2015:
+
+ - David Pettersson (Viendi IT-konsult AB)

@@ -1,0 +1,18 @@
+{% extends "survey/_base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static "survey/css/app.css" %}" />
+{% endblock %}
+
+{% block title %}
+    {% trans "Not Allowed" %}
+{% endblock %}
+
+{% block body_content %}
+    <div class="container" style="text-align: center;">
+        <h1>{% trans "Not Allowed" %}</h1>
+        <p>{% trans "Sorry, you are not allowed to access the results of this survey." %}</p>
+    </div>
+{% endblock %}

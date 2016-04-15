@@ -1,0 +1,48 @@
+{% load static %}
+{% load i18n %}
+<div id="guide-box" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">{% trans "First time here? Here's a short guide!" %}</h4>
+            </div>
+            <div class="modal-body">
+                <div id="guide-carousel" class="carousel slide">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="{% static 'survey/img/guide-1.png' %}">
+                            <div class="guide-caption">
+                                <p>{% trans 'This is where you start. On your left you find some information, help and contact buttons, as well as buttons to contact us and get back to this guide.' %}</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="{% static 'survey/img/guide-2.png' %}">
+                            <div class="guide-caption">
+                                <p>{% trans "In the top-right corner you'll find the tool that allows you to switch between different maps. Pick the one that suits you the best." %}</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="{% static 'survey/img/guide-3.png' %}">
+                            <div class="guide-caption">
+                                <p>{% trans "Use these tools to place markers, or draw lines or areas in the map." %}</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="{% static 'survey/img/guide-4.png' %}">
+                            <div class="guide-caption">
+                                <p>{% trans "When you have drawn on the map, a form will appear on the left in which you can provide information about the place or route you've drawn." %}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group pull-left">
+                    <button id="guide-prev" class="btn btn-default"><span class="glyphicon glyphicon-chevron-left"></span></button>
+                    <button id="guide-next" class="btn btn-default"><span class="glyphicon glyphicon-chevron-right"></span></button>
+                </div>
+                <button type="button" class="btn btn-success" data-dismiss="modal">{% trans 'Got it!' %}</button>
+            </div>
+        </div>
+    </div>
+</div>

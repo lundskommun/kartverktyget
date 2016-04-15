@@ -1,0 +1,35 @@
+div#map {
+    height: 1000px;
+}
+
+div.logo-box {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+div.logo-box img {
+    padding: 3pt;
+    max-height: 60pt;
+}
+
+img.lund-logo-not-published {
+    max-width: 32pt;
+}
+
+.guide-caption {
+    padding-top: 1em;
+    height: 5em;
+}
+
+.guide-caption p {
+    float: left;
+}
+
+.footer {
+    border-top: solid 1pt lightgray;
+    margin-top: 1.5em;
+    padding-top: 1em;
+    text-align: center;
+    color: gray;
+    font-size: 9pt;
+}

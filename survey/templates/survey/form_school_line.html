@@ -1,0 +1,44 @@
+{% load i18n %}
+
+<form id="sidebar-questionnaire-form">
+    <input type="hidden" name="inputGeometry" id="inputGeometry" value="{{ geometry_data }}">
+    <div class="form-group">
+        <label for="inputText">{% trans 'What would you want to tell us about the location/route?' %}</label>
+        <textarea name="inputText" id="inputText" class="form-control" minlength="3" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="inputMeans">{% trans 'How did the child get to school today?' %}</label>
+        <select name="inputMeans" id="inputMeans" class="form-control" required>
+            <option>{% trans 'Walked by him/herself or with other children' %}</option>
+            <option>{% trans 'Walked with an adult' %}</option>
+            <option>{% trans 'Cycled by him/herself or with other children' %}</option>
+            <option>{% trans 'Cycled with an adult' %}</option>
+            <option>{% trans 'Rode public transportation by him/herself or with other children' %}</option>
+            <option>{% trans 'Rode public transportation with an adult' %}</option>
+            <option>{% trans 'Driven by car or other motor vehicle' %}</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="inputHelmet">{% trans 'Did the child use a helmet?' %}</label>
+        <select name="inputHelmet" id="inputHelmet" class="form-control" required>
+            <option>{% trans "Don't know" %}</option>
+            <option>{% trans "Not applicable" %}</option>
+            <option>{% trans "Yes" %}</option>
+            <option>{% trans "No" %}</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="inputAge">{% trans 'What age is the child?' %}</label>
+        <input name="inputAge" id="inputAge" type="number" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <label for="inputDestination">{% trans 'Where was the child going?' %}</label>
+        <select name="inputDestination" id="inputDestination" class="form-control">
+            <option>{% trans "Don't want to say" %}</option>
+            <option>{% trans "Pre-school" %}</option>
+            <option>{% trans "School" %}</option>
+            <option>{% trans "Recreation center" %}</option>
+            <option>{% trans "Home" %}</option>
+        </select>
+    </div>
+</form>

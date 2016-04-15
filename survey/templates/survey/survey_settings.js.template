@@ -1,0 +1,14 @@
+var map_settings = {
+    center_point: [ {{ map_center }} ],
+    allow_polygons: {{ allow_polygons }}
+}
+
+var survey_settings = {
+    form_url: "{{ form_url }}",
+    post_url: "{{ post_url }}",
+}
+
+var generic_settings = {
+    raven_dsn: "{{ raven_dsn }}",
+}
+

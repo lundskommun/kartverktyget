@@ -1,0 +1,420 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Django\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-09 00:17+0100\n"
+"PO-Revision-Date: 2015-11-30 22:33+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: sv\n"
+"X-Generator: Poedit 1.8.6\n"
+
+#: .\survey\admin.py:10 .\survey\admin.py:14
+msgid "Link"
+msgstr "Länk"
+
+#: .\survey\admin.py:26
+msgid "public link"
+msgstr "publik länk"
+
+#: .\survey\admin.py:29
+msgid "results link"
+msgstr "resultatlänk"
+
+#: .\survey\models.py:13
+msgid "Free-text"
+msgstr "Fritext"
+
+#: .\survey\models.py:14
+msgid "School trips (original crawls)"
+msgstr "Skolresor"
+
+#: .\survey\models.py:22 .\survey\models.py:83
+msgid "created"
+msgstr "skapad"
+
+#: .\survey\models.py:26
+msgid "title"
+msgstr "titel"
+
+#: .\survey\models.py:27
+msgid "This title is shown to all users."
+msgstr "Den här rubriken syns för alla användare."
+
+#: .\survey\models.py:31
+msgid "slug"
+msgstr "kortnamn"
+
+#: .\survey\models.py:32
+msgid "Slug, or short-name. Used in URLs. Needs to be unique."
+msgstr ""
+"Kortnamn som används i URL:er. Måste vara unik."
+
+#: .\survey\models.py:36
+msgid "user"
+msgstr "användare"
+
+#: .\survey\models.py:37
+msgid ""
+"This is the user currently owning this survey. If you change this to someone "
+"else, and you are                      not a super-user, then you will not "
+"be able to see the survey any longer."
+msgstr ""
+"Det här är den användare som äger denna undersökning. Om du ändrar den till "
+"någon annan och du själv inte har superanvändare kommer du inte längre "
+"att ha tillgång till undersökningen."
+
+#: .\survey\models.py:40
+msgid "description"
+msgstr "beskrivning"
+
+#: .\survey\models.py:41
+msgid "This description is show to the contributors."
+msgstr "Den här beskrivningen kan läsas av de som deltar i undersökningen."
+
+#: .\survey\models.py:45
+msgid "map center"
+msgstr "kartans mittpunkt"
+
+#: .\survey\models.py:46
+msgid "Map center is where to center the map when the user first arrives. "
+msgstr ""
+"Kartans mittpunkt anger var kartans mitt ska vara när användaren först anländer på "
+"sidan."
+
+#: .\survey\models.py:52
+msgid "published"
+msgstr "publicerad"
+
+#: .\survey\models.py:53
+msgid "Decides if the survey should be available to contributors."
+msgstr "Avgör om din undersökning ska vara tillgänglig för de som deltagit."
+
+#: .\survey\models.py:57
+msgid "questionnaire"
+msgstr "frågeformulär"
+
+#: .\survey\models.py:58
+msgid "Decides which questionnaire to use."
+msgstr "Avgör vilket frågeformulär som ska användas."
+
+#: .\survey\models.py:64
+msgid "image"
+msgstr "bild"
+
+#: .\survey\models.py:65
+msgid "Image to be shown in conjunction with your survey."
+msgstr "Bild som ska visas i samband med din undersökning."
+
+#: .\survey\models.py:71
+msgid "Cannot modify questionnaire. Survey already has contributions."
+msgstr ""
+"Det går inte att ändra i frågeformuläret längre då undersökningen redan fått "
+"in svar."
+
+#: .\survey\models.py:77 .\survey\models.py:87
+msgid "survey"
+msgstr "undersökning"
+
+#: .\survey\models.py:78
+msgid "surveys"
+msgstr "undersökningar"
+
+#: .\survey\models.py:89
+msgid "questionnaire data"
+msgstr "frågeformulärets data"
+
+#: .\survey\models.py:90
+msgid "This is the stored responses from the contribution. Not to be edited."
+msgstr "Här är de sparade svar användarna lämnat. Dessa ska inte redigeras."
+
+#: .\survey\models.py:93
+msgid "geometry data"
+msgstr "geometriska data"
+
+#: .\survey\models.py:94
+msgid "This is the stored geoemetry from the contribution. Not to be edited."
+msgstr ""
+"Här är den sparade geometrin som användarna lämnat. Dessa ska inte "
+"redigeras."
+
+#: .\survey\models.py:97
+msgid "IP address"
+msgstr "IP-adress"
+
+#: .\survey\models.py:98
+msgid "This is the IP address that the contribution originated from."
+msgstr "Det här är den IP-adress som bidraget eller svaren skickats ifrån."
+
+#: .\survey\models.py:102
+#, python-format
+msgid "Contribution from %s"
+msgstr "Bidrag från %s"
+
+#: .\survey\models.py:105
+msgid "contribution"
+msgstr "bidrag"
+
+#: .\survey\models.py:106
+msgid "contributions"
+msgstr "bidrag"
+
+#: .\survey\templates\survey\form_freetext.html:6
+#: .\survey\templates\survey\form_school_line.html:6
+msgid "What would you want to tell us about the location/route?"
+msgstr "Vad vill du berätta om platsen/sträckan?"
+
+#: .\survey\templates\survey\form_school_line.html:10
+msgid "How did the child get to school today?"
+msgstr "Hur kom barnet till skolan idag?"
+
+#: .\survey\templates\survey\form_school_line.html:12
+msgid "Walked by him/herself or with other children"
+msgstr "Gick själv eller tillsammans med andra barn"
+
+#: .\survey\templates\survey\form_school_line.html:13
+msgid "Walked with an adult"
+msgstr "Gick med en vuxen"
+
+#: .\survey\templates\survey\form_school_line.html:14
+msgid "Cycled by him/herself or with other children"
+msgstr "Cyklade själv eller tillsammans med andra barn"
+
+#: .\survey\templates\survey\form_school_line.html:15
+msgid "Cycled with an adult"
+msgstr "Cyklade med en vuxen"
+
+#: .\survey\templates\survey\form_school_line.html:16
+msgid "Rode public transportation by him/herself or with other children"
+msgstr "Åkte med kollektivtrafik på egen hand eller tillsammans med andra barn"
+
+#: .\survey\templates\survey\form_school_line.html:17
+msgid "Rode public transportation with an adult"
+msgstr "Åkte med kollektivtrafik tillsammans med en vuxen"
+
+#: .\survey\templates\survey\form_school_line.html:18
+msgid "Driven by car or other motor vehicle"
+msgstr "Blev körd i bil eller med annat motordrivet fordon"
+
+#: .\survey\templates\survey\form_school_line.html:22
+msgid "Did the child use a helmet?"
+msgstr "Använde barnet hjälm?"
+
+#: .\survey\templates\survey\form_school_line.html:24
+msgid "Don't know"
+msgstr "Vet inte"
+
+#: .\survey\templates\survey\form_school_line.html:25
+msgid "Not applicable"
+msgstr "Går inte att tillämpa här"
+
+#: .\survey\templates\survey\form_school_line.html:26
+msgid "Yes"
+msgstr "Ja"
+
+#: .\survey\templates\survey\form_school_line.html:27
+msgid "No"
+msgstr "Nej"
+
+#: .\survey\templates\survey\form_school_line.html:31
+msgid "What age is the child?"
+msgstr "Ange barnets ålder"
+
+#: .\survey\templates\survey\form_school_line.html:35
+msgid "Where was the child going?"
+msgstr "Vart var barnet på väg?"
+
+#: .\survey\templates\survey\form_school_line.html:37
+msgid "Don't want to say"
+msgstr "Vill inte svara på det"
+
+#: .\survey\templates\survey\form_school_line.html:38
+msgid "Pre-school"
+msgstr "Förskola"
+
+#: .\survey\templates\survey\form_school_line.html:39
+msgid "School"
+msgstr "Skola"
+
+#: .\survey\templates\survey\form_school_line.html:40
+msgid "Recreation center"
+msgstr "Fritidsgård"
+
+#: .\survey\templates\survey\form_school_line.html:41
+msgid "Home"
+msgstr "Hemma"
+
+#: .\survey\templates\survey\results.html:42
+msgid "Results for"
+msgstr "Resultatet för"
+
+#: .\survey\templates\survey\results.html:52
+msgid "Statistics"
+msgstr "Statistik"
+
+#: .\survey\templates\survey\results.html:53
+msgid "The survey contains, in total:"
+msgstr "Undersökningen innehåller totalt:"
+
+#: .\survey\templates\survey\results.html:55
+msgid "points"
+msgstr "punkter"
+
+#: .\survey\templates\survey\results.html:56
+msgid "lines"
+msgstr "linjer"
+
+#: .\survey\templates\survey\results.html:57
+msgid "polygons"
+msgstr "polygoner"
+
+#: .\survey\templates\survey\results.html:59
+msgid "Export"
+msgstr "Exportera"
+
+#: .\survey\templates\survey\results.html:60
+msgid ""
+"Select data export. Note that you can only export one data type (e.g. lines) "
+"at a time."
+msgstr ""
+"Välj den data du vill exportera. Tänk på att du bara kan exportera en typ av "
+"data (exempelvis linjer) åt gången."
+
+#: .\survey\templates\survey\results.html:63
+msgid "Data type"
+msgstr "Typ av data"
+
+#: .\survey\templates\survey\results.html:65
+msgid "Points"
+msgstr "Punkter"
+
+#: .\survey\templates\survey\results.html:66
+msgid "Lines"
+msgstr "Linjer"
+
+#: .\survey\templates\survey\results.html:67
+msgid "Polygons"
+msgstr "Polygoner"
+
+#: .\survey\templates\survey\results.html:71
+msgid "Export to Excel"
+msgstr "Exportera till Excel"
+
+#: .\survey\templates\survey\results.html:74
+msgid "Export to GeoJSON"
+msgstr "Exportera till GeoJSON"
+
+#: .\survey\templates\survey\results_not_allowed.html:10
+#: .\survey\templates\survey\results_not_allowed.html:15
+msgid "Not Allowed"
+msgstr "Ej tillåtet"
+
+#: .\survey\templates\survey\results_not_allowed.html:16
+msgid "Sorry, you are not allowed to access the results of this survey."
+msgstr ""
+"Vi beklagar men resultatet av denna undersökning är inte tillgänglig för dig."
+
+#: .\survey\templates\survey\sidebar_intro.html:16
+msgid "Contact Us"
+msgstr "Kontakta oss"
+
+#: .\survey\templates\survey\sidebar_intro.html:17
+msgid "Help"
+msgstr "Hjälp"
+
+#: .\survey\templates\survey\sidebar_questionnaire.html:5
+msgid "Submit"
+msgstr "Skicka in"
+
+#: .\survey\templates\survey\sidebar_questionnaire.html:6
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: .\survey\templates\survey\sidebar_spinner.html:8
+msgid "Saving..."
+msgstr "Spara..."
+
+#: .\survey\templates\survey\survey.html:6
+#: .\survey\templates\survey\survey.html:45
+msgid "Survey:"
+msgstr "Undersökning:"
+
+#: .\survey\templates\survey\survey.html:65
+msgid "Important!"
+msgstr "Viktigt!"
+
+#: .\survey\templates\survey\survey.html:65
+msgid ""
+"By using this service, you approve to the usage of cookies for tracking "
+"purposes."
+msgstr "Genom att använda denna tjänst godkänner du att kakor används."
+
+#: .\survey\templates\survey\survey.html:66
+msgid "This service is provided by the City of Lund."
+msgstr "Den här tjänsten tillhandahålls av Lunds kommun."
+
+#: .\survey\templates\survey\survey_guide.html:7
+msgid "First time here? Here's a short guide!"
+msgstr "Är detta ditt första besök här? Här kommer en kort introduktion!"
+
+#: .\survey\templates\survey\survey_guide.html:15
+msgid ""
+"This is where you start. On your left you find some information, help and "
+"contact buttons, as well as buttons to contact us and get back to this guide."
+msgstr ""
+"Här startar du. I vänsterfältet hittar du kort information om undersökningen "
+"samt ikoner för att kontakta oss samt för att komma tillbaka till det här "
+"hjälpverktyget."
+
+#: .\survey\templates\survey\survey_guide.html:21
+msgid ""
+"In the top-right corner you'll find the tool that allows you to switch "
+"between different maps. Pick the one that suits you the best."
+msgstr ""
+"Högst upp i högra hörnet hittar du verktyg för att byta mellan olika sorters "
+"kartor. Välj den karta som passar dig bäst."
+
+#: .\survey\templates\survey\survey_guide.html:27
+msgid "Use these tools to place markers, or draw lines or areas in the map."
+msgstr ""
+"De här verktygen använder du för att rita in punkter, sträckor eller områden "
+"på kartan."
+
+#: .\survey\templates\survey\survey_guide.html:33
+msgid ""
+"When you have drawn on the map, a form will appear on the left in which you "
+"can provide information about the place or route you've drawn."
+msgstr ""
+"När du har gjort en markering på kartan kommer ett formulär upp i "
+"vänsterfältet. Där kan du berätta mer om den plats eller sträcka du markerat."
+
+#: .\survey\templates\survey\survey_guide.html:44
+msgid "Got it!"
+msgstr "Klart!"
+
+#: .\survey\templates\survey\survey_not_published.html:10
+#: .\survey\templates\survey\survey_not_published.html:15
+msgid "Survey Closed"
+msgstr "Undersökningen är stängd"
+
+#: .\survey\templates\survey\survey_not_published.html:16
+msgid "Sorry, this survey is closed."
+msgstr "Vi beklagar men denna undersökning är stängd."
+
+#: .\survey\views.py:218
+msgid " [...] (truncated)"
+msgstr " [...] (trunkerad)"
+
+#: .\survey\views.py:226
+#, python-format
+msgid "ID %d"
+msgstr "ID %d"

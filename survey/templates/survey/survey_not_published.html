@@ -1,0 +1,18 @@
+{% extends "survey/_base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static "survey/css/app.css" %}" />
+{% endblock %}
+
+{% block title %}
+    {% trans "Survey Closed" %}
+{% endblock %}
+
+{% block body_content %}
+    <div class="container" style="text-align: center;">
+        <h1>{% trans "Survey Closed" %}</h1>
+        <p>{% trans "Sorry, this survey is closed." %}</p>
+    </div>
+{% endblock %}

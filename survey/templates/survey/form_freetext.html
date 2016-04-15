@@ -1,0 +1,9 @@
+{% load i18n %}
+
+<form id="sidebar-questionnaire-form">
+    <input type="hidden" name="inputGeometry" id="inputGeometry" value="{{ geometry_data }}">
+    <div class="form-group">
+        <label for="inputText">{% trans 'What would you want to tell us about the location/route?' %}</label>
+        <textarea name="inputText" id="inputText" class="form-control" minlength="3" required></textarea>
+    </div>
+</form>

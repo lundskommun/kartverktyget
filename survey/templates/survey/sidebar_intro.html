@@ -1,0 +1,20 @@
+{% load i18n %}
+{% load static %}
+
+<div class="sidebar" id="sidebar-intro">
+
+{{ survey.description|safe }}
+
+<div class="logo-box">
+    <img src="{% static "survey/img/lund-logo.png" %}">
+    {% if survey.image %}
+    <img src="{{ survey.image.url }}">
+    {% endif %}
+</div>
+
+<div>
+    <a class="btn btn-default btn-small" href="mailto:{{ contact_email }}">{% trans 'Contact Us' %}</a>
+    <button class="btn btn-default btn-small" data-toggle="modal" data-target="#guide-box">{% trans 'Help' %}</button>
+</div>
+
+</div>
